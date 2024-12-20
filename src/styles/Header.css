@@ -1,0 +1,18 @@
+.header
+{
+display: flex;
+background-color: gray;
+color: white;
+padding: .5vh;
+justify-content: space-between;
+}
+
+.heading{
+    display: flex;
+    margin: auto;
+    font-size: 5vh;
+}
+.logo{
+    height: 5vh;
+    margin: .5vh;
+}

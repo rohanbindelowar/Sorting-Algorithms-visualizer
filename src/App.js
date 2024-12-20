@@ -1,9 +1,12 @@
+import Form from "./components/Form";
+import Header from "./components/Header";
 
 
 function App() {
   return (
     <div className="App">
-      <h1 className="">Hii</h1>
+      <Header/>
+      <Form/>
     </div>
   );
 }
