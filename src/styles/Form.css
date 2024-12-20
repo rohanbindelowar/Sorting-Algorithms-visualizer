@@ -1,0 +1,22 @@
+
+
+#count
+{
+    margin-right: 1vh;
+}
+
+#generateButton
+{
+    padding : 2vh;
+    background-color: rgb(12, 0, 122);
+    color : white;
+    border: transparent;
+   border-radius: 20%;
+   width: 20vh;
+   
+}
+
+#generateButton:hover
+{
+    opacity: 60%;
+}

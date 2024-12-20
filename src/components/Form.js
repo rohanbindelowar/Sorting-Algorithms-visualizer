@@ -1,5 +1,6 @@
 import React, { createContext, useEffect, useState } from 'react';
-import Tray from './Tray'; 
+import Tray from './Tray';
+import '../styles/Form.css'
 
 export const DataContext = createContext();
 
@@ -34,7 +35,7 @@ const Form = () => {
   }, [number]);
 
   return (
-    <div>
+    
       <div>
         <select
           name="sortingAlgorithm"
@@ -60,7 +61,7 @@ const Form = () => {
         <button className="formElement" id='generateButton' onClick={() => generateSample(number)}>
           Generate Sample
         </button>
-      </div>
+      
 
       <DataContext.Provider value={data}>
         <Tray algorithm={algorithm} data={data} setData={setData} />
