@@ -7,6 +7,7 @@ function App() {
     <div className="App">
       <Header/>
       <Form/>
+      <input style = {{display: "none"}} id = "isSorted" value = "0"/>
     </div>
   );
 }

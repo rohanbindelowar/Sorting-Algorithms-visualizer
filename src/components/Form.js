@@ -1,5 +1,5 @@
 import React, { createContext, useEffect, useState } from 'react';
-import Tray from './Tray'; // Adjust import based on your Tray component location
+import Tray from './Tray'; 
 
 export const DataContext = createContext();
 
@@ -22,7 +22,7 @@ const Form = () => {
   }
 
   function generateSample(size) {
-    document.getElementById("isSorted")?.value = 0; // Ensure the element exists
+    document.getElementById("isSorted").value = 0; 
     if (size < 5 || size > 1000) return;
 
     const newData = Array.from({ length: size }, () => Math.floor(Math.random() * size + 1));
@@ -46,7 +46,6 @@ const Form = () => {
           <option value="bubbleSort">Bubble Sort</option>
           <option value="selectionSort">Selection Sort</option>
           <option value="insertionSort">Insertion Sort</option>
-          <option value="cocktailShakerSort">Cocktail Shaker Sort</option>
         </select>
         <input
           className="formElement"
@@ -58,10 +57,9 @@ const Form = () => {
           value={number}
           onChange={handleCountChange}
         />
-        <button className="formElement" onClick={() => generateSample(number)}>
+        <button className="formElement" id='generateButton' onClick={() => generateSample(number)}>
           Generate Sample
         </button>
-        <button>Sort</button>
       </div>
 
       <DataContext.Provider value={data}>

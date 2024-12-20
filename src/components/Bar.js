@@ -1,0 +1,20 @@
+import React from "react";
+import '../styles/Bar.css'
+
+export const Bar = (props) => {
+  const barHeight = String((props.value / props.length) * 100) + "%";
+  const barWidth = String(100 / props.length) + "%";
+  const leftMarginPercentage = String(props.i * (100 / props.length)) + "%";
+  return (
+    <div
+      className="bar"
+      id={props.id}
+      style={{
+        height: barHeight,
+        width: barWidth,
+        marginLeft: leftMarginPercentage,
+        backgroundColor: "black",
+      }}
+    ></div>
+  );
+};
