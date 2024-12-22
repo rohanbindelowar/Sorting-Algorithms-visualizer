@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { DataContext } from "./Form";
 import Bar from "./Bar";
 import BubbleSort from "../Algorithms/BubbleSort";
+import SelectionSort from "../Algorithms/SelectionSort";
 import '../styles/Tray.css'
 
 
@@ -26,7 +27,7 @@ export const Tray = (props) => {
       }
       case "selectionSort": {
         console.log("Selection sort is in progress");
-       // SelectionSort(props.data, props.setData, speed, jump);
+       SelectionSort(props.data, props.setData, speed, jump);
         break;
       }
 
