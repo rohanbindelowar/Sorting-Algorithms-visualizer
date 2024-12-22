@@ -3,6 +3,7 @@ import { DataContext } from "./Form";
 import Bar from "./Bar";
 import BubbleSort from "../Algorithms/BubbleSort";
 import SelectionSort from "../Algorithms/SelectionSort";
+import InsertionSort from "../Algorithms/InsertionSort";
 import '../styles/Tray.css'
 
 
@@ -33,7 +34,7 @@ export const Tray = (props) => {
 
       case "insertionSort": {
         console.log("Insertion sort is in progress");
-       // insertionSort(props.data, props.setData, speed, jump);
+       InsertionSort(props.data, props.setData, speed, jump);
         break;
       }
       default: {

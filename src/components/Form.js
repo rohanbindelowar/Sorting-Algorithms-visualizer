@@ -5,7 +5,7 @@ import '../styles/Form.css'
 export const DataContext = createContext();
 
 const Form = () => {
-  const [number, setNumber] = useState(100);
+  const [number, setNumber] = useState(175);
   const [algorithm, setAlgorithm] = useState("bubbleSort");
   const [data, setData] = useState([]);
 
