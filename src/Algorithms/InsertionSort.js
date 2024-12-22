@@ -3,7 +3,7 @@ import Sleep from "./Sleep";
 import GreenLayer from "./GreenLayer";
 import InputOn from "./InputOn";
 
-const InsertionSort = async (data, setData,) => {
+const InsertionSort = async (data, setData) => {
   const arr = [...data];
   const n = arr.length;
   let i, j, temp;
@@ -37,7 +37,7 @@ const InsertionSort = async (data, setData,) => {
     document.getElementById(j + 1).style.height = keyHeight;
     setData(arr);
   }
-  GreenLayer(data, setData);
+  GreenLayer(data);
   InputOn();
 };
 

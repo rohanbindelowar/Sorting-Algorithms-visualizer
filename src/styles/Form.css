@@ -1,22 +1,38 @@
 
+.content{
+    display: flex;
+    justify-content:center;
+    gap: 30px;
+    padding-top: 10px;
+    
+}
 
-#count
-{
-    margin-right: 1vh;
+.formElement{
+    width: 150px;
+    text-align: center;
+    border-radius: 5%;
+    background: #ffffff;
+    font-size: 15px;
 }
 
 #generateButton
 {
     padding : 2vh;
-    background-color: rgb(12, 0, 122);
+    background-color: rgb(24, 3, 216);
     color : white;
     border: transparent;
-   border-radius: 20%;
+   border-radius: 5%;
    width: 20vh;
    
 }
 
 #generateButton:hover
 {
-    opacity: 60%;
+    padding : 2vh;
+    background-color: rgb(18, 0, 179);
+    color : white;
+    border: transparent;
+   border-radius: 5%;
+   cursor: pointer;
+ 
 }

@@ -3,7 +3,7 @@ import inputOn from "./InputOn";
 import Sleep from "./Sleep";
 import GreenLayer from "./GreenLayer";
 
-const BubbleSort = async (data, setData, speed, jump) => {
+const BubbleSort = async (data, setData) => {
   const arr = [...data];
   const n = arr.length;
   let i, j;
@@ -34,7 +34,7 @@ const BubbleSort = async (data, setData, speed, jump) => {
       }
     }
   }
-  GreenLayer(data, speed, jump);
+  GreenLayer(data);
   inputOn();
 };
 export default BubbleSort;

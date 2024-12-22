@@ -5,6 +5,7 @@ background-color: gray;
 color: white;
 padding: .5vh;
 justify-content: space-between;
+padding: 2px;
 }
 
 .heading{

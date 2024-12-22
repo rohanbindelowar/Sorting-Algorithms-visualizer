@@ -35,12 +35,12 @@ const Form = () => {
   }, [number]);
 
   return (
-    
-      <div>
+    <div>
+      <div className='content'>
         <select
           name="sortingAlgorithm"
           id="sortingAlgorithm"
-          className="sortingAlgorithm"
+          className="formElement"
           onChange={handleAlgorithmChange}
           value={algorithm}
         >
@@ -61,7 +61,7 @@ const Form = () => {
         <button className="formElement" id='generateButton' onClick={() => generateSample(number)}>
           Generate Sample
         </button>
-      
+        </div>
 
       <DataContext.Provider value={data}>
         <Tray algorithm={algorithm} data={data} setData={setData} />

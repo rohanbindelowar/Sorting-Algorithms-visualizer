@@ -1,7 +1,7 @@
 import React from 'react'
 import Sleep from './Sleep';
 
-export const GreenLayer = async(data, speed, jump) => {
+export const GreenLayer = async(data) => {
   let i,j;
   let counter = 0;
   const n = data.length;

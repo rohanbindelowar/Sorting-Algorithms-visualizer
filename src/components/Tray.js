@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { DataContext } from "./Form";
 import Bar from "./Bar";
 import BubbleSort from "../Algorithms/BubbleSort";
@@ -9,9 +9,7 @@ import '../styles/Tray.css'
 
 export const Tray = (props) => {
   const data = useContext(DataContext);
-  const [speed, setSpeed] = useState(0);
-  const [jump, setJump] = useState(0);
-  const [sliderValue, setSliderValue] = useState(51);
+
 
   const sort = () => {
     if (document.getElementById("isSorted").value == "1") return;
@@ -23,18 +21,18 @@ export const Tray = (props) => {
     switch (props.algorithm) {
       case "bubbleSort": {
         console.log("Bubble sort is in progress");
-        BubbleSort(props.data, props.setData, speed, jump);
+        BubbleSort(props.data, props.setData);
         break;
       }
       case "selectionSort": {
         console.log("Selection sort is in progress");
-       SelectionSort(props.data, props.setData, speed, jump);
+       SelectionSort(props.data, props.setData);
         break;
       }
 
       case "insertionSort": {
         console.log("Insertion sort is in progress");
-       InsertionSort(props.data, props.setData, speed, jump);
+       InsertionSort(props.data, props.setData);
         break;
       }
       default: {
@@ -44,7 +42,7 @@ export const Tray = (props) => {
     }
   };
   return (
-    <div>
+    <div className="trayContent">
       <button onClick={sort} id="sortingButton" className="edit">
         Sort
       </button>
