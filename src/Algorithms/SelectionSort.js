@@ -3,7 +3,7 @@ import inputOn from "./InputOn";
 import Sleep from "./Sleep";
 import GreenLayer from "./GreenLayer";
 
-const SelectionSort = async (data, setData, speed, jump) => {
+const SelectionSort = async (data, setData) => {
   const arr = [...data];
   const n = arr.length;
   let i, j, min;
@@ -38,7 +38,7 @@ const SelectionSort = async (data, setData, speed, jump) => {
 
     minElement.style.backgroundColor = "black";
   }
-  GreenLayer(data, speed, jump);
+  GreenLayer(data);
   inputOn();
 };
 export default SelectionSort;
