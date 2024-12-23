@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Sorting-Algorithms-visualizer/static/css/main.9539f036.css",
+    "main.js": "/Sorting-Algorithms-visualizer/static/js/main.3df79643.js",
+    "static/media/logo.png": "/Sorting-Algorithms-visualizer/static/media/logo.1833af6e411460d01911.png",
+    "index.html": "/Sorting-Algorithms-visualizer/index.html",
+    "main.9539f036.css.map": "/Sorting-Algorithms-visualizer/static/css/main.9539f036.css.map",
+    "main.3df79643.js.map": "/Sorting-Algorithms-visualizer/static/js/main.3df79643.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9539f036.css",
+    "static/js/main.3df79643.js"
+  ]
+}
